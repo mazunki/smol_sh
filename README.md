@@ -13,15 +13,18 @@ It is not a POSIX-compliant shell, by default, but may eventually support differ
 
 ## Requirements
 
+- `python3.10` or newer
 - `pygments` for colourful shell
 - `conda` for a safe environment
 
 ## Installation
 
+The installation expects the usage of Conda to keep the environment set up. You could manage this yourself through the requirements.txt file.
 Use the `Makefile`. There are mainly four targets:
 
-- `make environment` (run it once, it will use `conda` to set up the `smolsh` environment)
-- `make activate` simply changes the conda environment to `smolsh`
+- `make environment` (run it once, it will set up the `smolsh` virtual environment)
+- `make activate` simply changes the conda environment to `smolsh`.
+
 - `make run` will boot up a shell
 - `make test` will run the tests
 

@@ -1,4 +1,4 @@
-.PHONY: run test clean
+.PHONY: environment activate run test clean
 
 .DEFAULT_GOAL := run
 
@@ -8,7 +8,10 @@ environment:
 	conda install python=3.10
 	pip install -e .
 
-run:
+activate:
+	conda activate smolsh
+
+run: activate
 	@python -m smol_sh
 
 test:
