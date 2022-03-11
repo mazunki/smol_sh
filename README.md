@@ -19,7 +19,8 @@ It is not a POSIX-compliant shell, by default, but may eventually support differ
 
 ## Installation
 
-The installation expects the usage of Conda to keep the environment set up. You could manage this yourself through the requirements.txt file.
+The automatic installation expects the usage of Conda to keep the environment set up. You could manage this yourself if you want to.
+
 Use the `Makefile`. There are mainly four targets:
 
 - `make environment` (run it once, it will set up the `smolsh` virtual environment)
